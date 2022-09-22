@@ -1,0 +1,18 @@
+<html>
+<body>
+<div style="color:blue;font-size:56px;">
+<script language="JavaScript">
+var A=prompt("A=","");
+var B=prompt("B=","");
+
+var x;
+
+var A=parseFloat(A);
+var B=parseFloat(B);
+x= A*A*A + 3*(A*A)*B+3*(A*(B*B))+B*B*B;
+
+document.write("(A+B)^3 = " +x+"");
+</script>
+</div>
+</body>
+</html>
