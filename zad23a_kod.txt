@@ -1,0 +1,39 @@
+
+<html>
+<body>
+<div style="color:blue;font-size:40px;">
+<script language="JavaScript">
+var a_mar=prompt("podaj najdluzszy bok a w cm=","");
+var b_mar=prompt("podaj kolejny dowolny bok=","");
+var obw_mar;
+var c_mar;
+var a_mar=parseFloat(a_mar);
+var b_mar=parseFloat(b_mar);
+var ka_mar;
+var kb_mar;
+var pole_mar;
+var h3_mar;
+var sa_mar;
+var sc_mar;
+var st_mar;
+var sct_mar;
+c_mar= Math.sqrt((a_mar*a_mar-b_mar*b_mar));
+obw_mar=a_mar+b_mar+c_mar;
+pole_mar=c_mar*b_mar/2;
+ka_mar=Math.sin(c_mar/b_mar)*180/Math.PI;
+kb_mar=90-ka_mar;
+h3_mar=b_mar*c_mar/a_mar;
+sa_mar= c_mar/a_mar;
+sc_mar= b_mar/a_mar;
+st_mar= c_mar/b_mar;
+sct_mar=b_mar/c_mar;
+document.write("trzeci bok - " +c_mar.toFixed(3)+"<br>");
+document.write("obwod - " +obw_mar+"<br>");
+document.write("katy wynosza - 90.000," +ka_mar.toFixed(3)+","+kb_mar.toFixed(3)+"<br>");
+document.write("pole  - " +pole_mar.toFixed(3)+"<br>");
+document.write("wszystkie wysokosci - " +c_mar.toFixed(3)+","+b_mar.toFixed(3)+","+h3_mar.toFixed(3)+"<br>");
+document.write("wartosci trygonometryczne - " +sa_mar.toFixed(3)+","+sc_mar.toFixed(3)+","+st_mar.toFixed(3)+","+sct_mar.toFixed(3)+"<br>");
+</script>
+</div>
+</body>
+</html>
